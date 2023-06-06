@@ -10,5 +10,5 @@ import retrofit2.http.GET;
 public interface ShopApi {
 
     @GET("renukaTemplates")
-    Call<List<Shop>>  fetchShopDetails();
+    Call<List<Shop>> fetchShopDetails();
 }

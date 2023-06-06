@@ -10,7 +10,7 @@ import java.util.List;
 public class Shop {
     @SerializedName("_id")
     private String shopId;
-    private  Integer Id;
+    private Integer Id;
     @SerializedName("admin_graphql_api_id")
     private String adminGraphqlApiId;
     @SerializedName("app_id")
@@ -148,7 +148,7 @@ public class Shop {
     private List<LineItem> lineItems;
     @SerializedName("payment_terms")
     private String paymentTerms;
-    private  List<String>  refunds;
+    private List<String> refunds;
 
     public String getPaymentTerms() {
         return paymentTerms;
@@ -765,9 +765,6 @@ public class Shop {
 
     public void setClientDetails(ClientDetails clientDetails) {
         this.clientDetails = clientDetails;
-
-
-
 
 
     }
