@@ -1,16 +1,13 @@
 package com.improve10x.onlineshoping.model;
 
 import com.google.gson.annotations.SerializedName;
-import com.improve10x.onlineshoping.model.ClientDetails;
-import com.improve10x.onlineshoping.model.LineItem;
-import com.improve10x.onlineshoping.model.SetPrice;
 
 import java.util.List;
 
 public class Shop {
     @SerializedName("_id")
     private String shopId;
-    private Integer Id;
+    private Integer id;
     @SerializedName("admin_graphql_api_id")
     private String adminGraphqlApiId;
     @SerializedName("app_id")
@@ -175,11 +172,11 @@ public class Shop {
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getAdminGraphqlApiId() {

@@ -1,28 +1,27 @@
 package com.improve10x.onlineshoping.model;
 
 import com.google.gson.annotations.SerializedName;
-import com.improve10x.onlineshoping.model.LineItem;
 
 public class SetPrice {
     @SerializedName("shop_money")
-    private LineItem.Money shopMoney;
+    private Money shopMoney;
 
-    public LineItem.Money getShopMoney() {
+    @SerializedName("presentment_money")
+    private Money presentmentMoney;
+
+    public Money getShopMoney() {
         return shopMoney;
     }
 
-    public void setShopMoney(LineItem.Money shopMoney) {
+    public void setShopMoney(Money shopMoney) {
         this.shopMoney = shopMoney;
     }
 
-    public LineItem.Money getPresentmentMoney() {
+    public Money getPresentmentMoney() {
         return presentmentMoney;
     }
 
-    public void setPresentmentMoney(LineItem.Money presentmentMoney) {
+    public void setPresentmentMoney(Money presentmentMoney) {
         this.presentmentMoney = presentmentMoney;
     }
-
-    @SerializedName("presentment_money")
-    private LineItem.Money presentmentMoney;
 }

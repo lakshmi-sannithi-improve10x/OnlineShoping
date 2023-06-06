@@ -33,6 +33,7 @@ public class ExampleUnitTest {
         assertNotNull(shops);
         assertFalse(shops.isEmpty());
         System.out.println(new Gson().toJson(shops));
+        //assertEquals("en-US,en;q=0.9", shops.get(0).getClientDetails().getAcceptLanguage());
     }
 }
 

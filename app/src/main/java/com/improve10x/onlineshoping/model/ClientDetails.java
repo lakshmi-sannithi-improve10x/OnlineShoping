@@ -16,7 +16,7 @@ public class ClientDetails {
     @SerializedName("user_agent")
     private String userAgent;
     @SerializedName("current_subtotal_price_set")
-    private SetPrice setPrice;
+    private SetPrice currentSubtotalPriceSet;
 
     public String getAcceptLanguage() {
         return acceptLanguage;
@@ -66,11 +66,11 @@ public class ClientDetails {
         this.userAgent = userAgent;
     }
 
-    public SetPrice getSetPrice() {
-        return setPrice;
+    public SetPrice getCurrentSubtotalPriceSet() {
+        return currentSubtotalPriceSet;
     }
 
-    public void setSetPrice(SetPrice setPrice) {
-        this.setPrice = setPrice;
+    public void setCurrentSubtotalPriceSet(SetPrice currentSubtotalPriceSet) {
+        this.currentSubtotalPriceSet = currentSubtotalPriceSet;
     }
 }
